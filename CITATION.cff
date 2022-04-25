@@ -1,0 +1,11 @@
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Bernardes
+    given-names: Evandro
+    orcid: https://orcid.org/0000-0001-7239-0878
+  - family-names: Viollet
+    given-names: Stéphane
+    orcid: https://orcid.org/0000-0003-1585-9822
+title: "Quaternion to Euler angles conversion: a direct, general and computationally efficient method"
+version: 1.0.0
+date-released: 2022-04-25
