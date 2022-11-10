@@ -40,11 +40,12 @@ for s in seqs:
     time_mat.append(timeit.timeit('r.as_euler(s)', number = 1, globals=globals()))   
     
     #%% Choose one and comment the other:
+    
     # Compiled, if special Scipy version is used
-#    time_quat.append(timeit.timeit('r.as_euler(s, algorithm = \'from_quat\')', number = 1, globals=globals()))
+    time_quat.append(timeit.timeit('r.as_euler(s, algorithm = \'from_quat\')', number = 1, globals=globals()))
     
     # Non compiled, slower
-    time_quat.append(timeit.timeit('euler_from_quat(r, s)', number = 1, globals=globals()))
+#    time_quat.append(timeit.timeit('euler_from_quat(r, s)', number = 1, globals=globals()))
     
     time_ratio.append(time_mat[-1] / time_quat[-1])
 
