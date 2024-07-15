@@ -1,9 +1,11 @@
 # Quaternion to Euler Scipy Implementation
 It contains the implementation of the method described in [https://doi.org/10.1371/journal.pone.0276302](https://doi.org/10.1371/journal.pone.0276302). for the direct conversion of a rotation Quaternion into Euler angles of any given sequence.
+Note: sadly, the original paper was published with some typos in the equations. For an updated version with the correct equations, check Chapter 10 of my [PhD thesis manuscript](https://theses.hal.science/tel-04646218).
 
 This implementation is heavily based in the older Scipy implementation.
 
-~In order to easily test the differences in time execution of this method compared to the Quaternion-to-Matrix-to-Euler method implemented originally in Scipy, it is best to use a version of Scipy that has both methods compiled. This can be found here: [https://github.com/evbernardes/scipy](https://github.com/evbernardes/scipy)~
+## Unit tests
+All the necessary unit tests showing the correctedness of the algorithm can be seen in the the Scipy implementation: [github.com/scipy/.../test_rotation.py](https://github.com/scipy/scipy/blob/main/scipy/spatial/transform/tests/test_rotation.py). 
 
 ## This algorithm has been integrated in the following projects:
 - [Sympy](https://github.com/sympy/sympy)
