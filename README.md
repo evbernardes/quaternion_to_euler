@@ -1,5 +1,6 @@
 # Quaternion to Euler Scipy Implementation
 It contains the implementation of the method described in [https://doi.org/10.1371/journal.pone.0276302](https://doi.org/10.1371/journal.pone.0276302). for the direct conversion of a rotation Quaternion into Euler angles of any given sequence.
+
 Note: sadly, the original paper was published with some typos in the equations. For an updated version with the correct equations, check Chapter 10 of my [PhD thesis manuscript](https://theses.hal.science/tel-04646218).
 
 This implementation is heavily based in the older Scipy implementation.
